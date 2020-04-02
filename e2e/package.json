@@ -1,0 +1,30 @@
+{
+  "name": "puppeteer-demo",
+  "version": "1.0.0",
+  "description": "`npm install`",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/bootstrap.js --recursive test --timeout 10000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "lodash": "^4.17.15",
+    "mocha": "^7.1.1"
+  },
+  "devDependencies": {
+    "mkdirp": "^1.0.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sighWang/e2e-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sighWang/e2e-demo/issues"
+  },
+  "homepage": "https://github.com/sighWang/e2e-demo#readme"
+}
