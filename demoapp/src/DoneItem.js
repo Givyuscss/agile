@@ -22,8 +22,8 @@ class DoneItem extends Component{
     render(){
         return(
             <div>
-                <input  value={this.state.inputContent} onChange={this.onInputChange} />
-                <button onClick = {this.onDoneBtnClick}>Done</button>
+                <input id = "done-todo" value={this.state.inputContent} onChange={this.onInputChange} />
+                <button id = "done-button" onClick = {this.onDoneBtnClick}>Done</button>
             </div>
         )
     }

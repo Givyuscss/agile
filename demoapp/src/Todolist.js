@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import ListItem from "./ListItem";
+import ListDoneItem  from "./ListDoneItem";
+import ListNewItem  from "./ListItem";
 import NewItem from "./NewItem"
 import DoneItem from "./DoneItem"
+import "./ListItem.css"
 
 class TodoList extends Component{
     constructor(props){
@@ -33,10 +35,19 @@ class TodoList extends Component{
     }
     render(){
           return (
-            <div>
+            <div> 
+              <div id = "donelist">
+              <p class= "tasklabel"> Done Task </p>
               {
-                this.state.todolist.map(item => <ListItem item={item}/>)
+                this.state.todolist.map(item => <ListDoneItem item={item}/>)
               }
+              </div>
+              <div id = "newlist">
+              <p class= "tasklabel"> New Task </p>
+              {
+                this.state.todolist.map(item => <ListNewItem item={item}/>)
+              }
+              </div>
               <NewItem addItem = {this.addNewItem}/>
               <DoneItem doneItem = {this.DoneItem}/>
             </div>
